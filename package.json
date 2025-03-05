@@ -1,7 +1,7 @@
 {
   "name": "wedding-project",
   "version": "1.0.0",
-  "main": ".src/js/index.js",
+  "main": "src/index.tsx",
   "scripts": {
     "build:dev": "webpack --env mode=development",
     "build:prod": "webpack --env mode=production",
@@ -31,7 +31,9 @@
     "webpack-dev-server": "^4.15.2"
   },
   "dependencies": {
+    "classnames": "^2.5.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "scheduler": "^0.25.0"
   }
 }

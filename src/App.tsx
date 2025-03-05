@@ -1,9 +1,15 @@
-
+import Button, { ButtonTypes } from "./components/Button";
 
 const App = () => {
-    return (
-        <button className={'button'}>Hello React</button>
-    );
+  return (
+    <Button
+      type={ButtonTypes.Primary}
+      title={"Hello"}
+      onClick={() => {
+        console.log("hello");
+      }}
+    ></Button>
+  );
 };
 
 export default App;
