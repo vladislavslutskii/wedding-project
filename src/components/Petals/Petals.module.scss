@@ -1,0 +1,58 @@
+.petals {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+  /* Форсируем GPU-рендеринг */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.petalWrapper {
+  position: absolute;
+  top: -60px;
+
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+.petal {
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+
+  /* Уменьшаем яркость и непрозрачность */
+  opacity: 0.6;
+  // filter: brightness(1); /* Уменьшаем яркость */
+
+  --sway-x: 20px;
+
+  animation-name: sway;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(110vh);
+  }
+}
+
+@keyframes sway {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(var(--sway-x));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

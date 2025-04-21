@@ -1,0 +1,187 @@
+.timerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-family: "Great Vibes", cursive;
+  font-size: 2.3rem;
+  letter-spacing: 3px;
+  white-space: nowrap;
+  color: #d4a373;
+}
+
+.timer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1.7rem;
+}
+
+.timerItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeValue {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.timeLabel {
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
+  text-transform: lowercase;
+  opacity: 0.9;
+  font-family: "Great Vibes", cursive;
+  text-shadow: 15px 15px 1px rgba(224, 168, 168, 0.1);
+}
+
+.separatorLine {
+  width: 1px;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 0 0.8rem;
+  align-self: center;
+}
+
+// ========== MEDIA QUERIES ==========
+
+@media (max-width: 2560px) {
+  .title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 1921px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1680px) {
+  .title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .timeValue {
+    font-size: 2rem;
+  }
+  .timeLabel {
+    font-size: 2rem;
+  }
+  .separatorLine {
+    height: 100px;
+  }
+}
+@media (max-width: 1440px) {
+  .title {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 1025px) {
+  .title {
+    font-size: 2.6rem;
+  }
+
+  .timer {
+    gap: 1.2rem;
+  }
+
+  .timeValue,
+  .timeLabel {
+    font-size: 2.8rem;
+  }
+
+  .separatorLine {
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .timer {
+    gap: 0.8rem;
+  }
+
+  .timeValue,
+  .timeLabel {
+    font-size: 3rem;
+  }
+
+  .separatorLine {
+    height: 90px;
+  }
+}
+@media (max-width: 500px) {
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .timer {
+    gap: 0.5rem;
+  }
+
+  .timeValue,
+  .timeLabel {
+    font-size: 2.7rem;
+  }
+
+  .separatorLine {
+    height: 80px;
+  }
+}
+@media (max-width: 425px) {
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .timer {
+    gap: 0.5rem;
+  }
+
+  .timeValue,
+  .timeLabel {
+    font-size: 2.7rem;
+  }
+
+  .separatorLine {
+    height: 80px;
+  }
+}
+
+@media (max-width: 375px) {
+  .title {
+    font-size: 3.1rem;
+  }
+
+  .timeValue,
+  .timeLabel {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .timeValue {
+    font-size: 3.5rem;
+  }
+
+  .timeLabel {
+    font-size: 3.2rem;
+  }
+
+  .separatorLine {
+    height: 70px;
+  }
+}

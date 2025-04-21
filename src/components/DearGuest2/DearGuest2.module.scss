@@ -1,0 +1,287 @@
+.invite {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  background: white;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0 20px;
+  letter-spacing: 10px;
+  font-size: 6rem;
+  line-height: 95px;
+  font-weight: 500;
+  white-space: nowrap;
+  font-family: "Great Vibes", cursive;
+  text-shadow: 15px 15px 1px rgba(224, 168, 168, 0.1);
+  color: #d4a373;
+}
+
+.text {
+  font-size: 1.1rem;
+  width: 80%;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-size: 2.1rem;
+  font-family: "Great Vibes", cursive;
+  margin: 5px 0;
+  color: #d4a373;
+}
+
+.time {
+  font-size: 2.3rem;
+  font-family: "Great Vibes", cursive;
+  color: #d4a373;
+}
+
+.calendar {
+  background: #fcf8f5;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 380px;
+  border-radius: 10%;
+  margin-bottom: 10px;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.days {
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.3rem;
+}
+
+.day,
+.emptyDay {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.day {
+  position: relative;
+
+  font-size: 1rem;
+  &:hover {
+    background: #f1f3f5;
+  }
+}
+
+.emptyDay {
+  visibility: hidden;
+}
+
+.activeDay {
+  color: #d4a373;
+  font-weight: bold;
+
+  .heart {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    animation: pulse 1.5s infinite;
+  }
+
+  .dayNumber {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.halfBorder {
+  height: 1px;
+  width: 90%;
+  margin: 50px auto;
+  background: linear-gradient(to right, transparent, #1f1a1a, transparent);
+  opacity: 0.6;
+  border-radius: 50%;
+}
+
+// ==================== MEDIA ====================
+
+@media (max-width: 1024px) {
+  .invite {
+    margin-top: 40px;
+  }
+  .header {
+    font-size: 6rem;
+    line-height: 40px;
+    margin: 20px 0 25px;
+  }
+
+  .text {
+    font-size: 1.4rem;
+  }
+
+  .date,
+  .time {
+    font-size: 2.5rem;
+  }
+
+  .calendar {
+    width: 380px;
+  }
+  .day {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .invite {
+    gap: 3px;
+  }
+  .header {
+    font-size: 5rem;
+    line-height: 80px;
+  }
+
+  .text {
+    font-size: 1.3rem;
+  }
+
+  .date,
+  .time {
+    font-size: 2.5rem;
+  }
+
+  .calendar {
+    width: 350px;
+  }
+  .day {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 431px) {
+  .invite {
+    gap: 5px;
+    margin-top: 0px;
+  }
+  .header {
+    font-size: 4rem;
+    // line-height: 20px;
+    margin: 40px 0 10px;
+  }
+
+  .text {
+    font-size: 1.4rem;
+    width: 80%;
+    text-align: center;
+  }
+
+  .date,
+  .time {
+    font-size: 2.5rem;
+  }
+
+  .calendar {
+    width: 320px;
+  }
+  .day {
+    font-size: 1.3rem;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1.2);
+    }
+    50% {
+      transform: scale(1.9);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  .invite {
+    gap: 5px;
+  }
+  .header {
+    font-size: 5rem;
+    line-height: 50px;
+    white-space: normal;
+    word-break: break-word;
+    // line-height: 40px;
+    // margin: 0 0 15px;
+  }
+
+  .text {
+    font-size: 1.7rem;
+    width: 90%;
+    text-align: center;
+  }
+
+  .date,
+  .time {
+    font-size: 3rem;
+  }
+
+  .calendar {
+    width: 270px;
+  }
+  .day {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 323px) {
+  .invite {
+    margin: 0;
+  }
+  .header {
+    font-size: 5rem;
+    margin: 20px 0 15px;
+    margin-bottom: 0;
+  }
+
+  .text {
+    font-size: 2rem;
+    width: 90%;
+    text-align: center;
+  }
+
+  .date,
+  .time {
+    font-size: 3.5rem;
+  }
+
+  .calendar {
+    width: 250px;
+  }
+  .day {
+    font-size: 1.9rem;
+  }
+}
