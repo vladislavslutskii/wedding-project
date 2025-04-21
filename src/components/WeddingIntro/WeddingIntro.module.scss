@@ -1,0 +1,239 @@
+.wrapper {
+  text-align: center;
+  font-family: "Georgia", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.photoBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid rgba(26, 22, 22, 0.788);
+  background-color: rgba(255, 255, 255, 0.911);
+  border-radius: 25px;
+}
+
+.photo {
+  width: 320px;
+  height: 340px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 21px;
+  border-top-right-radius: 21px;
+}
+
+.label {
+  margin-top: 0.5rem;
+  font-family: "Great Vibes", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  white-space: nowrap;
+}
+
+.plus {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.title {
+  margin-top: 15px;
+  font-family: "Great Vibes", cursive;
+  font-size: 2.3rem;
+  text-shadow: 15px 15px 1px rgba(224, 168, 168, 0.1);
+  color: #d4a373;
+}
+
+// ========================== MEDIA ==========================
+
+@media (max-width: 2560px) {
+  .photo {
+    width: 550px;
+    height: 550px;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1900px) {
+  .photo {
+    width: 300px;
+    height: 300px;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1680px) {
+  .photo {
+    width: 300px;
+    height: 300px;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1440px) {
+  .photo {
+    width: 280px;
+    height: 280px;
+  }
+  .title {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    gap: 4rem;
+  }
+
+  .photo {
+    width: 270px;
+    height: 310px;
+  }
+
+  .plus {
+    font-size: 3rem;
+  }
+
+  .title {
+    font-size: 2.9rem;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 833px) {
+  .card {
+    // flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    gap: 4px;
+  }
+
+  .card {
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .photo {
+    width: 320px;
+    height: 350px;
+  }
+
+  .label {
+    font-size: 1.5rem;
+  }
+
+  .plus {
+    font-size: 2rem;
+  }
+
+  .title {
+    width: 80%;
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper {
+    gap: 4px;
+  }
+
+  .card {
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .photo {
+    width: 290px;
+    height: 330px;
+  }
+
+  .label {
+    font-size: 1.5rem;
+  }
+
+  .plus {
+    font-size: 2rem;
+  }
+
+  .title {
+    width: 80%;
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .photo {
+    width: 300px;
+    height: 320px;
+  }
+
+  .label {
+    font-size: 1.3rem;
+  }
+
+  .plus {
+    font-size: 2.3rem;
+  }
+
+  .title {
+    width: 80%;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .photo {
+    width: 270px;
+    height: 300px;
+  }
+
+  .label {
+    font-size: 1.9rem;
+  }
+
+  .plus {
+    font-size: 2rem;
+  }
+
+  .title {
+    width: 70%;
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .photo {
+    width: 250px;
+    height: 280px;
+  }
+
+  .label {
+    font-size: 1.6rem;
+  }
+
+  .plus {
+    font-size: 1.8rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+}

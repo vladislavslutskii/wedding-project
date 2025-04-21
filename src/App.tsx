@@ -1,15 +1,28 @@
-import Button, { ButtonTypes } from "./components/Button";
+import Program from "@components/Program";
+import WeddingIntro from "@components/WeddingIntro";
+import Petals from "@components/Petals";
+import DearGuest2 from "@components/DearGuest2";
+import Location from "@components/Location";
+
+import Greetings from "./components/Greetings";
+import styles from "./App.module.scss";
 
 const App = () => {
   return (
-    <Button
-      type={ButtonTypes.Primary}
-      title={"Hello"}
-      onClick={() => {
-        console.log("hello");
-      }}
-    ></Button>
+    <div className={styles.app}>
+      <Greetings></Greetings>
+      <DearGuest2
+        id="dearGuest"
+        day={9}
+        month="августа"
+        year={2025}
+        time="14:00"
+      />
+      <Location></Location>
+      <Program></Program>
+      <WeddingIntro></WeddingIntro>
+      <Petals></Petals>
+    </div>
   );
 };
-
 export default App;

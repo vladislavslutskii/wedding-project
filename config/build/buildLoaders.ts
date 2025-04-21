@@ -1,15 +1,31 @@
-import { BuildOptions } from "config/build/types/types";
+
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
+
+import { BuildOptions } from "./types/types";
 import { ModuleOptions } from "webpack";
 
 export function buildLoaders(options: BuildOptions): ModuleOptions["rules"] {
   const isDev = options.mode === "development";
 
+  
+
+  
+  const assetLoader = {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+      type: "asset/resource"
+  };
+  const svgLoader = {
+    test: /\.svg$/,
+  use: ["@svgr/webpack"]
+  }
   const cssLoaderWithModules = {
+
     loader: "css-loader",
     options: {
+      esModule: true,
       modules: {
         localIdentName: isDev ? "[path][name]__[local]" : "[hash:base64:8}",
+
       },
     },
   };
@@ -32,5 +48,7 @@ export function buildLoaders(options: BuildOptions): ModuleOptions["rules"] {
     use: "ts-loader",
     exclude: /node_modules/,
   };
-  return [scssLoader, tsLoader];
+  
+
+  return [scssLoader, tsLoader, assetLoader,svgLoader ];
 }

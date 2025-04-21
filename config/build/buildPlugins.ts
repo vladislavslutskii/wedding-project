@@ -1,7 +1,8 @@
-import { BuildOptions } from "config/build/types/types";
+
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import webpack, { Configuration } from "webpack";
+import { BuildOptions } from "./types/types";
 
 export function buildPlugins({
   mode,
