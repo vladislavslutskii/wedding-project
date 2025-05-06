@@ -1,11 +1,11 @@
-import Program from "@components/Program";
-import WeddingIntro from "@components/WeddingIntro";
-import Petals from "@components/Petals";
 import DearGuest2 from "@components/DearGuest2";
 import Location from "@components/Location";
+import Petals from "@components/Petals";
+import Program from "@components/Program";
+import WeddingIntro from "@components/WeddingIntro";
+import styles from "./App.module.scss";
 
 import Greetings from "./components/Greetings";
-import styles from "./App.module.scss";
 
 const App = () => {
   return (

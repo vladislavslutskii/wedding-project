@@ -1,10 +1,10 @@
 @keyframes heartbeat {
   0%,
   100% {
-    transform: scale(1);
+	transform: scale(1);
   }
   50% {
-    transform: scale(1.1); 
+	transform: scale(1.1);
   }
 }
 
@@ -19,12 +19,12 @@
   background-color: #fff;
 
   &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: url("@assets/backPhoto.jpg") no-repeat center center / cover;
-    z-index: 1;
-    display: none;
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: url("@assets/backPhoto.jpg") no-repeat center center / cover;
+	z-index: 1;
+	display: none;
   }
 }
 
@@ -35,57 +35,57 @@
   justify-content: center;
   width: 39%;
   height: 100vh;
-  padding-top: 90px;
   text-align: center;
   position: relative;
   z-index: 2;
-  padding: 90px 15px 0px 15px;
+  padding: 100px 15px 40px 15px;
+  gap: 100px;
 
   &__title {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 60px;
-    letter-spacing: 10px;
-    font-size: 6rem;
-    line-height: 95px;
-    font-weight: 500;
-    white-space: nowrap;
-    font-family: "Great Vibes", cursive;
-    text-shadow: 15px 15px 1px rgba(224, 168, 168, 0.1);
-    color: #d4a373;
+	display: flex;
+	flex-direction: column;
+	letter-spacing: 10px;
+	font-size: 6.5rem;
+	line-height: 70%;
+	font-weight: 500;
+	white-space: nowrap;
+	font-family: "Great Vibes", cursive;
+	text-shadow: 15px 15px 1px rgba(224, 168, 168, 0.1);
+	color: #d4a373;
+	margin-bottom: 50px;
 
-    span {
-      font-family: "Montserrat", sans-serif;
-      font-size: 2rem;
-      margin-top: 5px;
-      letter-spacing: 2px;
-      color: #d4a373;
-    }
+	span {
+	  font-family: "Montserrat", sans-serif;
+	  font-size: 2rem;
+	  margin-top: 5px;
+	  letter-spacing: 2px;
+	  color: #d4a373;
+	}
   }
 
   .date {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-family: "Great Vibes", cursive;
-    margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.4rem;
+	font-family: "Great Vibes", cursive;
+	margin-bottom: 30px;
 
-    &::before,
-    &::after {
-      content: "❤️";
-      display: block;
-      font-size: 90%;
-      margin: 0 10px auto;
-      color: #e077ac;
-      animation: heartbeat 2s infinite; /* Длительность анимации увеличена */
-    }
+	&::before,
+	&::after {
+	  content: "❤️";
+	  display: block;
+	  font-size: 90%;
+	  margin: 0 10px auto;
+	  color: #e077ac;
+	  animation: heartbeat 2s infinite; /* Длительность анимации увеличена */
+	}
   }
 
   .downArrow {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
   }
 }
 
@@ -101,248 +101,122 @@
   object-fit: cover;
 }
 
-/* ---------- Медиа-запросы ---------- */
-
-@media (max-width: 2561px) {
+@media (min-width: 1680px) {
   .averageContainer {
-    gap: 100px;
-    &__title {
-      line-height: 130px;
-      margin-bottom: 80px;
-
-      span {
-        font-size: 1.7rem;
-      }
-    }
-    .downArrow {
-      width: 80px;
-      height: 80px;
-    }
-  }
-}
-
-@media (max-width: 1920px) {
-  .averageContainer {
-    gap: 90px;
-    &__title {
-      line-height: 100px;
-      margin-bottom: 80px;
-      span {
-        font-size: 1.5rem;
-      }
-    }
-
-    .date {
-      margin-bottom: 80px;
-      font-size: 2.3rem;
-    }
-
-    .downArrow {
-      width: 70px;
-      height: 70px;
-    }
+	gap: 150px;
   }
 }
 
 @media (max-width: 1680px) {
   .averageContainer {
-    gap: 60px;
-    &__title {
-      line-height: 90px;
-      margin-bottom: 80px;
-
-      span {
-        font-size: 1.5rem;
-      }
-    }
-
-    .date {
-      margin-bottom: 50px;
-      font-size: 1.8rem;
-    }
-
-    .downArrow {
-      width: 50px;
-      height: 50px;
-    }
+	gap: 120px;
   }
 }
-@media (max-width: 1440px) {
+
+@media (max-width: 1200px) {
   .averageContainer {
-    gap: 60px;
-    &__title {
-      line-height: 90px;
-      margin-bottom: 60px;
-
-      span {
-        font-size: 1.5rem;
-      }
-    }
-
-    .date {
-      margin-bottom: 50px;
-      font-size: 2.1rem;
-    }
-
-    .downArrow {
-      width: 55px;
-      height: 55px;
-    }
+	.downArrow {
+	  width: 45px;
+	  height: 45px;
+	}
   }
 }
 
 @media (max-width: 1100px) {
   .averageContainer {
-    gap: 50px;
-    &__title {
-      line-height: 70px;
-      margin-bottom: 55px;
+	gap: 100px;
 
-      span {
-        font-size: 1.5rem;
-      }
-    }
+	&__title {
+	  line-height: 66px;
+	}
 
-    .date {
-      margin-bottom: 50px;
-      font-size: 2.2rem;
-    }
-
-    .downArrow {
-      width: 50px;
-      height: 50px;
-    }
-  }
-}
-
-@media (max-width: 1025px) {
-  .averageContainer {
-    gap: 50px;
-    &__title {
-      line-height: 65px;
-      margin-bottom: 55px;
-    }
-
-    .date {
-      font-size: 2.4rem;
-      margin-bottom: 55px;
-    }
-
-    .downArrow {
-      width: 45px;
-      height: 45px;
-    }
+	.downArrow {
+	  width: 40px;
+	  height: 40px;
+	}
   }
 }
 
 @media (max-width: 950px) {
   .averageContainer {
-    gap: 50px;
-    &__title {
-      line-height: 60px;
-      margin-bottom: 50px;
-    }
+	&__title {
+	  font-size: 6rem;
+	}
 
-    .date {
-      font-size: 2.5rem;
-      margin-bottom: 50px;
-    }
+	.date {
+	  font-size: 2.4rem;
+	}
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-    &::before {
-      display: block;
-    }
+	&::before {
+	  display: block;
+	}
   }
 
   .leftContainer,
   .rightContainer {
-    display: none;
+	display: none;
   }
 
   .averageContainer {
-    width: 100%;
-    padding: 40px 20px;
-    justify-content: flex-end;
-    gap: 10px;
-    &__title {
-      display: flex;
-      align-items: center;
-      letter-spacing: 10px;
-      line-height: 55px;
-      color: white;
-      margin-bottom: 50px;
+	width: 100%;
+	padding: 100px 20px;
+	justify-content: flex-end;
+	gap: 15px;
 
-      span {
-        color: white;
-      }
-    }
+	&__title {
+	  display: flex;
+	  align-items: center;
+	  letter-spacing: 10px;
+	  line-height: 55px;
+	  color: white;
 
-    .date {
-      color: white;
-      margin-bottom: 40px;
-    }
+	  span {
+		color: white;
+	  }
+	}
 
-    .downArrow {
-      width: 45px;
-      height: 45px;
-    }
+	.date {
+	  color: white;
+	}
+
+	.downArrow {
+	  margin-top: 50px;
+	  width: 45px;
+	  height: 45px;
+
+	}
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 576px) {
   .averageContainer {
-    &__title {
-      line-height: 50px;
-      margin-bottom: 40px;
-      span {
-        font-size: 2rem;
-      }
-    }
-    .date {
-      font-size: 3.2rem;
-      margin-bottom: 35px;
-    }
+	.downArrow {
+	  //margin-top: 50px;
+	  width: 40px;
+	  height: 40px;
 
-    .downArrow {
-      width: 40px;
-      height: 40px;
-    }
+	}
   }
 }
 
 @media (max-width: 376px) {
   .averageContainer {
-    gap: 10px;
-    &__title {
-      line-height: 50px;
-      margin-bottom: 40px;
-      font-size: 8rem;
-      span {
-        font-size: 2rem;
-      }
-    }
-    .date {
-      display: none;
-    }
+	gap: 40px;
 
-    .downArrow {
-      width: 35px;
-      height: 35px;
-    }
-  }
-}
-@media (max-width: 322px) {
-  .averageContainer {
-    &__title {
-      line-height: 45px;
-      margin-bottom: 40px;
-    }
+	.date {
+	  display: none;
+	}
+
+	.downArrow {
+	  margin-top: 80px;
+	}
   }
 }

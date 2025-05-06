@@ -49,191 +49,200 @@
 }
 
 .title {
-  margin-top: 15px;
+  margin-bottom: 15px;
   font-family: "Great Vibes", cursive;
   font-size: 2.3rem;
   text-shadow: 15px 15px 1px rgba(224, 168, 168, 0.1);
   color: #d4a373;
 }
 
-// ========================== MEDIA ==========================
 
-@media (max-width: 2560px) {
+@media (min-width: 1920px) {
   .photo {
-    width: 550px;
-    height: 550px;
+	width: 500px;
+	height: 500px;
   }
   .title {
-    font-size: 2.5rem;
+	margin-bottom: 50px;
+	font-size: 3.5rem;
   }
 }
 
-@media (max-width: 1900px) {
+@media (max-width: 1920px) {
   .photo {
-    width: 300px;
-    height: 300px;
+	width: 350px;
+	height: 350px;
   }
   .title {
-    font-size: 2rem;
+	font-size: 3.3rem;
+	margin-bottom: 40px;
   }
 }
+
 @media (max-width: 1680px) {
   .photo {
-    width: 300px;
-    height: 300px;
+	width: 300px;
+	height: 300px;
   }
   .title {
-    font-size: 2rem;
+	margin-bottom: 40px;
+	line-height: 50px;
+	font-size: 3.2rem;
   }
 }
+
 @media (max-width: 1440px) {
   .photo {
-    width: 280px;
-    height: 280px;
+	width: 290px;
+	height: 290px;
   }
   .title {
-    font-size: 2.3rem;
+	margin-bottom: 35px;
+	font-size: 3rem;
   }
 }
 
 @media (max-width: 1024px) {
   .card {
-    gap: 4rem;
+	gap: 4rem;
   }
-
+  ц
   .photo {
-    width: 270px;
-    height: 310px;
+	width: 280px;
+	height: 290px;
   }
 
   .plus {
-    font-size: 3rem;
+	font-size: 2.1rem;
   }
 
   .title {
-    font-size: 2.9rem;
-    line-height: 1.1;
+	font-size: 2.9rem;
+	line-height: 1.1;
   }
 }
 
-@media (max-width: 833px) {
-  .card {
-    // flex-direction: column;
-  }
-}
 
 @media (max-width: 768px) {
   .wrapper {
-    gap: 4px;
+	gap: 4px;
   }
 
   .card {
-    gap: 2rem;
-    flex-direction: column;
+	gap: 2rem;
+	flex-direction: column;
   }
 
   .photo {
-    width: 320px;
-    height: 350px;
+	width: 290px;
+	height: 300px;
   }
 
   .label {
-    font-size: 1.5rem;
+	font-size: 1.8rem;
   }
 
   .plus {
-    font-size: 2rem;
+	font-size: 2.5rem;
   }
 
   .title {
-    width: 80%;
-    font-size: 2.8rem;
+	margin-bottom: 30px;
+	width: 80%;
+	font-size: 3.2rem;
   }
 }
-@media (max-width: 500px) {
+
+@media (max-width: 550px) {
   .wrapper {
-    gap: 4px;
+	gap: 4px;
   }
 
   .card {
-    gap: 2rem;
-    flex-direction: column;
+	gap: 2rem;
+	flex-direction: column;
   }
 
   .photo {
-    width: 290px;
-    height: 330px;
+	width: 280px;
+	height: 270px;
   }
 
   .label {
-    font-size: 1.5rem;
+	font-size: 1.5rem;
   }
 
   .plus {
-    font-size: 2rem;
+	font-size: 2rem;
   }
 
   .title {
-    width: 80%;
-    font-size: 2.3rem;
+	width: 80%;
+	font-size: 2.9rem;
+
   }
 }
 
 @media (max-width: 425px) {
   .photo {
-    width: 300px;
-    height: 320px;
+	width: 240px;
+	height: 260px;
   }
 
   .label {
-    font-size: 1.3rem;
+	font-size: 1.3rem;
   }
 
   .plus {
-    font-size: 2.3rem;
+	font-size: 2.3rem;
   }
 
   .title {
-    width: 80%;
-    font-size: 2.5rem;
+	margin-bottom: 25px;
+
+	width: 80%;
+	font-size: 3.1rem;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .photo {
-    width: 270px;
-    height: 300px;
+	width: 270px;
+	height: 250px;
   }
 
   .label {
-    font-size: 1.9rem;
+	font-size: 1.9rem;
   }
 
   .plus {
-    font-size: 2rem;
+	font-size: 2rem;
   }
 
   .title {
-    width: 70%;
-    font-size: 3.5rem;
+	margin-bottom: 23px;
+	width: 70%;
+	font-size: 3.0rem;
+	letter-spacing: 3px;
   }
 }
 
 @media (max-width: 320px) {
   .photo {
-    width: 250px;
-    height: 280px;
+	width: 270px;
+	height: 280px;
   }
 
   .label {
-    font-size: 1.6rem;
+	font-size: 1.6rem;
   }
 
   .plus {
-    font-size: 1.8rem;
+	font-size: 2.5rem;
   }
 
   .title {
-    font-size: 3rem;
+	letter-spacing: 1px;
+	font-size: 3.1rem;
   }
 }

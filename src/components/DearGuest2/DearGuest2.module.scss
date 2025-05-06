@@ -7,14 +7,14 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 80px;
+  margin-top: 3rem;
   height: 100%;
+  padding: 0 15px;
 }
 
 .header {
   display: flex;
   flex-direction: column;
-  margin: 15px 0 20px;
   letter-spacing: 10px;
   font-size: 6rem;
   line-height: 95px;
@@ -23,20 +23,21 @@
   font-family: "Great Vibes", cursive;
   text-shadow: 15px 15px 1px rgba(224, 168, 168, 0.1);
   color: #d4a373;
+  margin-top: 3rem;
 }
 
 .text {
-  font-size: 1.1rem;
+  font-size: 2rem;
   width: 80%;
-  line-height: 1.6;
+  line-height: 44px;
   color: #555;
-  margin-bottom: 10px;
+  font-family: "Great Vibes", cursive;
 }
 
 .date {
   font-size: 2.1rem;
   font-family: "Great Vibes", cursive;
-  margin: 5px 0;
+
   color: #d4a373;
 }
 
@@ -49,10 +50,9 @@
 .calendar {
   background: #fcf8f5;
   padding: 1rem;
-  border-radius: 8px;
-  width: 380px;
-  border-radius: 10%;
+  width: 350px;
   margin-bottom: 10px;
+  border-radius: 10%;
 }
 
 .weekdays {
@@ -63,7 +63,6 @@
 }
 
 .days {
-  color: black;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 0.3rem;
@@ -81,10 +80,10 @@
 
 .day {
   position: relative;
-
   font-size: 1rem;
+
   &:hover {
-    background: #f1f3f5;
+	background: #f1f3f5;
   }
 }
 
@@ -97,27 +96,27 @@
   font-weight: bold;
 
   .heart {
-    position: absolute;
-    width: 2.5rem;
-    height: 2.5rem;
-    animation: pulse 1.5s infinite;
+	position: absolute;
+	width: 2.5rem;
+	height: 2.5rem;
+	animation: pulse 1.5s infinite;
   }
 
   .dayNumber {
-    position: relative;
-    z-index: 1;
+	position: relative;
+	z-index: 1;
   }
 }
 
 @keyframes pulse {
   0% {
-    transform: scale(1);
+	transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
+	transform: scale(1.2);
   }
   100% {
-    transform: scale(1);
+	transform: scale(1);
   }
 }
 
@@ -130,158 +129,260 @@
   border-radius: 50%;
 }
 
-// ==================== MEDIA ====================
-
-@media (max-width: 1024px) {
+@media (min-width: 1920px) {
   .invite {
-    margin-top: 40px;
+	gap: 20px;
   }
   .header {
-    font-size: 6rem;
-    line-height: 40px;
-    margin: 20px 0 25px;
+	margin-bottom: 25px;
+	font-size: 6rem;
+	line-height: 85px;
+  }
+  .text {
+	width: 60%;
+	line-height: 75px;
+	font-size: 2.6rem;
+  }
+  .date,
+  .time {
+	font-size: 2.8rem;
+  }
+  .calendar {
+	width: 550px;
+  }
+  .weekdays {
+	font-size: 1.4rem;
   }
 
+  .day {
+	font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1920px) {
+  .invite {
+	gap: 15px;
+  }
   .text {
-    font-size: 1.4rem;
+	width: 55%;
+	line-height: 50px;
+	font-size: 2.3rem;
+  }
+  .header {
+	margin-bottom: 10px;
+	font-size: 5.5rem;
+	line-height: 85px;
+  }
+  .date,
+  .time {
+	font-size: 2.6rem;
+  }
+  .calendar {
+	width: 380px;
+  }
+  .weekdays {
+	font-size: 1.3rem;
+  }
+
+  .day {
+	font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  .invite {
+	gap: 15px;
+  }
+  .header {
+	margin-top: 25px;
+	font-size: 5.3rem;
+	line-height: 85px;
+	margin-bottom: 5px;
+  }
+  .text {
+	width: 60%;
+	line-height: 45px;
+	font-size: 2.3rem;
+  }
+  .date,
+  .time {
+	font-size: 2.5rem;
+  }
+  .calendar {
+	width: 300px;
+  }
+  .weekdays {
+	font-size: 1.1rem;
+  }
+
+  .day {
+	font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  .header {
+	margin-top: 20px;
+	//font-size: 5rem;
+	line-height: 85px;
+	margin-bottom: 0px;
+  }
+  .text {
+	width: 60%;
+	line-height: 43px;
+	font-size: 2.1rem;
   }
 
   .date,
   .time {
-    font-size: 2.5rem;
+	font-size: 2.3rem;
   }
 
   .calendar {
-    width: 380px;
+	width: 310px;
+  }
+  .weekdays {
+	font-size: 1.2rem;
   }
   .day {
-    font-size: 1.1rem;
+	font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+	margin-top: 20px;
+	font-size: 5.1rem;
+	line-height: 85px;
+	margin-bottom: 0px;
+  }
+  .text {
+	width: 80%;
+	font-size: 2.2rem;
+	line-height: 40px;
+  }
+
+  .date,
+  .time {
+	font-size: 2.7rem;
+  }
+
+  .calendar {
+	width: 300px;
+  }
+  .weekdays {
+	font-size: 1.2rem;
+  }
+  .day {
+	font-size: 1.2rem;
   }
 }
 
 @media (max-width: 768px) {
   .invite {
-    gap: 3px;
+	gap: 10px;
   }
   .header {
-    font-size: 5rem;
-    line-height: 80px;
+	font-size: 4.6rem;
+	line-height: 70px;
+	margin-bottom: 10px;
   }
 
   .text {
-    font-size: 1.3rem;
+	width: 85%;
+	font-size: 2.2rem;
   }
 
   .date,
   .time {
-    font-size: 2.5rem;
+	font-size: 2.4rem;
   }
 
   .calendar {
-    width: 350px;
+	width: 300px;
   }
   .day {
-    font-size: 1.1rem;
+	font-size: 1.2rem;
   }
 }
 
-@media (max-width: 431px) {
+@media (max-width: 451px) {
   .invite {
-    gap: 5px;
-    margin-top: 0px;
+	gap: 19px;
+
   }
   .header {
-    font-size: 4rem;
-    // line-height: 20px;
-    margin: 40px 0 10px;
+	line-height: 50px;
+	font-size: 3.8rem;
+	margin: 20px 0 5px;
+	white-space: normal;
+	word-break: break-word;
   }
 
   .text {
-    font-size: 1.4rem;
-    width: 80%;
-    text-align: center;
+	font-size: 2.2rem;
+	width: 85%;
+	text-align: center;
   }
 
   .date,
   .time {
-    font-size: 2.5rem;
+	font-size: 2.6rem;
   }
 
   .calendar {
-    width: 320px;
+	width: 280px;
   }
+
   .day {
-    font-size: 1.3rem;
-  }
-  @keyframes pulse {
-    0% {
-      transform: scale(1.2);
-    }
-    50% {
-      transform: scale(1.9);
-    }
-    100% {
-      transform: scale(1.2);
-    }
+	font-size: 1.2rem;
   }
 }
 
 @media (max-width: 376px) {
   .invite {
-    gap: 5px;
+	gap: 17px;
   }
   .header {
-    font-size: 5rem;
-    line-height: 50px;
-    white-space: normal;
-    word-break: break-word;
-    // line-height: 40px;
-    // margin: 0 0 15px;
+	font-size: 5rem;
+	margin: 20px 0 5px;
+	white-space: normal;
+	word-break: break-word;
+	letter-spacing: 13px;
   }
-
   .text {
-    font-size: 1.7rem;
-    width: 90%;
-    text-align: center;
+	font-size: 2.4rem;
+	width: 92%;
+	text-align: center;
   }
-
   .date,
   .time {
-    font-size: 3rem;
-  }
-
-  .calendar {
-    width: 270px;
+	font-size: 2.8rem;
   }
   .day {
-    font-size: 1.6rem;
+	font-size: 1.4rem;
   }
 }
+
 @media (max-width: 323px) {
-  .invite {
-    margin: 0;
-  }
   .header {
-    font-size: 5rem;
-    margin: 20px 0 15px;
-    margin-bottom: 0;
+	font-size: 4.7rem;
+	line-height: 40px;
   }
-
   .text {
-    font-size: 2rem;
-    width: 90%;
-    text-align: center;
+	font-size: 2.5rem;
+	line-height: 40px;
+	width: 90%;
+	text-align: center;
   }
-
   .date,
   .time {
-    font-size: 3.5rem;
+	font-size: 3rem;
   }
-
   .calendar {
-    width: 250px;
+	width: 260px;
   }
   .day {
-    font-size: 1.9rem;
+	font-size: 1.3rem;
   }
 }

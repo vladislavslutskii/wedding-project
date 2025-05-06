@@ -14,7 +14,7 @@ export function buildWebpack(options: BuildOptions): webpack.Configuration {
     entry: paths.entry,
     output: {
       path: paths.output,
-      filename: "[name].[contenthash].js",
+      filename: "[name].js",
       clean: true,
     },
     plugins: buildPlugins(options),
@@ -34,5 +34,6 @@ export function buildWebpack(options: BuildOptions): webpack.Configuration {
         maxEntrypointSize: 800000, // Увеличить допустимый размер точки входа (в байтах)
         maxAssetSize: 800000, // Увеличить допустимый размер одного файла
     },
+    
   };
 }
