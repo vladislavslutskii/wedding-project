@@ -1,4 +1,3 @@
-
 import path from "path";
 import webpack from "webpack";
 import { buildWebpack } from "./config/build/buildWebpack";
@@ -20,7 +19,6 @@ export default (env: EnvVariables) => {
     port: env.port ?? 3000,
     mode: env.mode ?? "development",
     paths: paths,
-   
   });
 
   return config;

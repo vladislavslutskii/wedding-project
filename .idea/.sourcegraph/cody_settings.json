@@ -6,12 +6,12 @@
                     "storage" : true
                 },
                 "extension" : {
-                    "version" : "7.88.0"
+                    "version" : "7.90.0"
                 },
                 "ide" : {
                     "name" : "JetBrains",
                     "productCode" : 5,
-                    "version" : "WS-243.25659.40"
+                    "version" : "WS-251.23774.424"
                 },
                 "running" : true
             },

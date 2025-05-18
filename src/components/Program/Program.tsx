@@ -11,7 +11,7 @@ const Program = ({}) => {
         <div className={styles.icon}>
           <Clock width={90} height={80}></Clock>
         </div>
-        <p className={styles.time}>14:00</p>
+        <p className={styles.time}>14:30</p>
         <p className={styles.text}>Сбор гостей</p>
       </div>
 
@@ -19,7 +19,7 @@ const Program = ({}) => {
         <div className={styles.icons}>
           <Champagne width={90} height={80}></Champagne>
         </div>
-        <p className={styles.time}>14:30</p>
+        <p className={styles.time}>15:00</p>
         <p className={styles.text}>Фуршет</p>
       </div>
 
@@ -27,14 +27,14 @@ const Program = ({}) => {
         <div className={styles.icon}>
           <Rings width={90} height={80}></Rings>
         </div>
-        <p className={styles.time}>15:00</p>
-        <p className={styles.text}>Регистрация</p>
+        <p className={styles.time}>15:30</p>
+        <p className={styles.text}>Церемония</p>
       </div>
       <div className={styles.item}>
         <div className={styles.icon}>
           <Plate width={90} height={80}></Plate>
         </div>
-        <p className={styles.time}>15:30</p>
+        <p className={styles.time}>16:30</p>
         <p className={styles.text}>Банкет</p>
       </div>
       <div className={styles.item}>
